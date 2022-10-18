@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.hblock {
+  background-color: #f5f5f5;
+  display: flex;
+}
+.hblock-menu {
+  list-style: none;
+  display: flex;
+}
+.hblock-menu-li {
+  color: red;
+}/*# sourceMappingURL=slyle.css.map */

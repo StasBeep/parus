@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hblock {
+    background-color: #eeeeee;
+    display: flex;
+}
+
+.hblock-menu {
+    list-style: none;
+    display: flex;
+}
