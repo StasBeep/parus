@@ -88,6 +88,9 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
+  -webkit-transition: font-weight 0.1s ease;
+  transition: font-weight 0.1s ease;
 }
 
 .header-menu-li-btn {
@@ -100,11 +103,18 @@
   padding: 10px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: background-color 0.8s ease, color 0.8s ease;
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
 
 .header-menu-li-btn:hover {
   background-color: #02897a;
   color: #ffffff;
+}
+
+.header-menu-li-btn:active {
+  background-color: red;
+  color: black;
 }
 
 .header-menu-li-light {
@@ -121,6 +131,24 @@
   top: 3px;
   left: 3px;
   fill: #02897a;
+  -webkit-transition: background-color 0.8s ease, fill 0.8s ease;
+  transition: background-color 0.8s ease, fill 0.8s ease;
+}
+
+.header-menu-li-light:hover {
+  background-color: #02897a;
+}
+
+.header-menu-li-light:hover > .header-menu-li-light-svg {
+  fill: #f3f3f3;
+}
+
+.header-menu-li-light:active {
+  background-color: red;
+}
+
+.header-menu-li-light:active > .header-menu-li-light-svg {
+  fill: black;
 }
 
 .header-menu-li:nth-child(5) {
