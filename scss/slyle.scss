@@ -1,3 +1,98 @@
 // Подключение файла scss с переменными
 @import "./variables";
 
+.header {
+    display: flex;
+    padding: 25px 0;
+
+    &-logo {
+        text-decoration: none;
+        display: flex;
+
+        &-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &-text {
+            display: block;
+            align-self: center;
+            color: $logo-color;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 28px;
+            margin-left: 16px;
+            margin-right: 237px;
+        }
+    }
+
+    &-menu {
+        display: flex;
+        list-style-type: none;
+
+        &-li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: $main-color;
+            margin-right: 25px;
+            width: 64px;
+            text-align: center;
+            align-self: center;
+
+            &-btn {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                background-color: white;
+                border: 1px solid $border-btn;
+                border-radius: 4px;
+                padding: 10px 25px;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: $bg-active-btn;
+                    color: #ffffff;
+                }
+            }
+
+            &-light {
+                width: 32px;
+                height: 32px;
+                background-color: #f3f3f3;
+                border-radius: 100%;
+                border: 1px solid #f3f3f3;
+                // Фиксация блока для выравнивания
+                // svg картинки
+                position: relative;
+
+                &-svg {
+                    // ВЫравнивание svg картинки относительно
+                    // родительского блока
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                    fill: $bg-active-btn;
+                }
+            }
+
+            &:nth-child(5) {
+                width: auto;
+            }
+
+            &:nth-child(6) {
+                width: auto;
+            }
+
+            &:last-child {
+                width: auto;
+                margin-right: 0;
+            }
+
+            &:hover {
+                font-weight: 600;
+                
+            }
+        }
+    }
+}
