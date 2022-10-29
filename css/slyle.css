@@ -8,39 +8,60 @@
   margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
+
 .wrapper-container {
   padding: 0 159px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .wrapper-forcontent {
-  min-height: 100vh; /* 100 видимых высот */
+  min-height: 100vh;
+  /* 100 видимых высот */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* end === wrapper === end */
 /* === content-without-footer === */
 /* Основная часть без footer */
 .content-without-footer {
-  flex-grow: 1; /* Отношение блоков */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* Отношение блоков */
 }
 
 /* end === content-without-footer === end */
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 25px 0;
 }
+
 .header-logo {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .header-logo-img {
   width: 40px;
   height: 40px;
 }
+
 .header-logo-text {
   display: block;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #173a56;
   font-weight: 700;
   font-size: 30px;
@@ -48,10 +69,14 @@
   margin-left: 16px;
   margin-right: 237px;
 }
+
 .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
+
 .header-menu-li {
   font-weight: 400;
   font-size: 16px;
@@ -60,8 +85,11 @@
   margin-right: 25px;
   width: 64px;
   text-align: center;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .header-menu-li-btn {
   font-weight: 600;
   font-size: 16px;
@@ -70,12 +98,15 @@
   border: 1px solid #bcd0e5;
   border-radius: 4px;
   padding: 10px 25px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .header-menu-li-btn:hover {
   background-color: #02897a;
   color: #ffffff;
 }
+
 .header-menu-li-light {
   width: 32px;
   height: 32px;
@@ -84,22 +115,28 @@
   border: 1px solid #f3f3f3;
   position: relative;
 }
+
 .header-menu-li-light-svg {
   position: absolute;
   top: 3px;
   left: 3px;
   fill: #02897a;
 }
+
 .header-menu-li:nth-child(5) {
   width: auto;
 }
+
 .header-menu-li:nth-child(6) {
   width: auto;
 }
+
 .header-menu-li:last-child {
   width: auto;
   margin-right: 0;
 }
+
 .header-menu-li:hover {
   font-weight: 600;
-}/*# sourceMappingURL=slyle.css.map */
+}
+/*# sourceMappingURL=slyle.css.map */
