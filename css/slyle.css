@@ -8,60 +8,39 @@
   margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
-
 .wrapper-container {
   padding: 0 159px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .wrapper-forcontent {
-  min-height: 100vh;
-  /* 100 видимых высот */
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-height: 100vh; /* 100 видимых высот */
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 /* end === wrapper === end */
 /* === content-without-footer === */
 /* Основная часть без footer */
 .content-without-footer {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  /* Отношение блоков */
+  flex-grow: 1; /* Отношение блоков */
 }
 
 /* end === content-without-footer === end */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 25px 0;
 }
-
 .header-logo {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header-logo-img {
   width: 40px;
   height: 40px;
 }
-
 .header-logo-text {
   display: block;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: #173a56;
   font-weight: 700;
   font-size: 30px;
@@ -69,14 +48,10 @@
   margin-left: 16px;
   margin-right: 237px;
 }
-
 .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
-
 .header-menu-li {
   font-weight: 400;
   font-size: 16px;
@@ -85,14 +60,10 @@
   margin-right: 25px;
   width: 64px;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   cursor: pointer;
-  -webkit-transition: font-weight 0.1s ease;
   transition: font-weight 0.1s ease;
 }
-
 .header-menu-li-btn {
   font-weight: 600;
   font-size: 16px;
@@ -101,22 +72,17 @@
   border: 1px solid #bcd0e5;
   border-radius: 4px;
   padding: 10px 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: background-color 0.8s ease, color 0.8s ease;
-  transition: background-color 0.8s ease, color 0.8s ease;
+  box-sizing: border-box;
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
-
 .header-menu-li-btn:hover {
   background-color: #02897a;
   color: #ffffff;
 }
-
 .header-menu-li-btn:active {
   background-color: red;
   color: black;
 }
-
 .header-menu-li-light {
   width: 32px;
   height: 32px;
@@ -125,46 +91,86 @@
   border: 1px solid #f3f3f3;
   position: relative;
 }
-
 .header-menu-li-light-svg {
   position: absolute;
   top: 3px;
   left: 3px;
   fill: #02897a;
-  -webkit-transition: background-color 0.8s ease, fill 0.8s ease;
-  transition: background-color 0.8s ease, fill 0.8s ease;
+  transition: background-color 0.8s ease, fill 0.8s ease;
 }
-
 .header-menu-li-light:hover {
   background-color: #02897a;
 }
-
 .header-menu-li-light:hover > .header-menu-li-light-svg {
   fill: #f3f3f3;
 }
-
 .header-menu-li-light:active {
   background-color: red;
 }
-
 .header-menu-li-light:active > .header-menu-li-light-svg {
   fill: black;
 }
-
 .header-menu-li:nth-child(5) {
   width: auto;
 }
-
 .header-menu-li:nth-child(6) {
   width: auto;
 }
-
 .header-menu-li:last-child {
   width: auto;
   margin-right: 0;
 }
-
 .header-menu-li:hover {
   font-weight: 600;
 }
-/*# sourceMappingURL=slyle.css.map */
+
+.face {
+  padding: 145px 0 218px;
+  box-sizing: border-box;
+  background-image: url(../image/bgSection1.jpg);
+  background-repeat: no-repeat;
+  background-position: 430px 35px;
+}
+.face-title {
+  display: block;
+  width: 310px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #22343d;
+}
+.face-text {
+  width: 375px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #22343d;
+  margin-bottom: 45px;
+}
+.face-transition {
+  margin: 0;
+}
+.face-transition-btn {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 41px;
+  box-sizing: border-box;
+  background-color: #02897a;
+  border-radius: 4px;
+  border: none;
+  margin-right: 30px;
+}
+.face-transition-svg {
+  width: 20px;
+  height: 17px;
+  margin-right: 8px;
+  fill: #02897a;
+}
+.face-transition-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02897a;
+}/*# sourceMappingURL=slyle.css.map */
