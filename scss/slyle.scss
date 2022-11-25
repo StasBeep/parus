@@ -1,5 +1,7 @@
 // Подключение файла scss с переменными
 @import "./variables";
+@import "./fonts";
+@import "./mix";
 
 .header {
     display: flex;
@@ -133,19 +135,15 @@
     background-position: 430px 35px;
 
     &-title {
+        @include FontSize();
         display: block;
         width: 310px;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
         color: $main-color;
     }
 
     &-text {
+        @include FontSize(poppins-semibold, 400, 18px, 28px);
         width: 375px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
         color: $main-color;
         margin-bottom: 45px;
     }
