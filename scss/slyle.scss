@@ -127,49 +127,57 @@
 
 .face {
     padding: 145px 0 218px;
-    background-image: url(../image/bgsection1.png);
+    box-sizing: border-box;
+    background-image: url(../image/bgSection1.jpg);
     background-repeat: no-repeat;
-    background-position: 450px 20px;
+    background-position: 430px 35px;
 
     &-title {
-        font-style: normal;
+        display: block;
+        width: 310px;
         font-weight: 700;
         font-size: 40px;
         line-height: 60px;
         color: $main-color;
-        width: 315px;
-        display: block;
     }
 
     &-text {
-        font-style: normal;
+        width: 375px;
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
         color: $main-color;
-        width: 373px;
+        margin-bottom: 45px;
     }
 
-    &-btn {
-        background: $bg-active-btn;
-        border-radius: 4px;
-        padding: 15px 41px;
-        color: $color-white;
-        border: 1px solid $bg-active-btn;
-    }
+    &-transition {
+        margin: 0;
 
-    &-svg {
-        fill: $bg-active-btn;
-        width: 20px;
-        height: 17px;
-    }
+        &-btn {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 15px 41px;
+            box-sizing: border-box;
+            background-color: $bg-active-btn;
+            border-radius: 4px;
+            border: none;
+            margin-right: 30px;
+        }
 
-    &-link {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-        color: $bg-active-btn;
-        text-decoration: none;
-    }
+        &-svg {
+            width: 20px;
+            height: 17px;
+            margin-right: 8px;
+            fill: $bg-active-btn;
+        }
 
+        &-link {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $bg-active-btn;
+        }
+    }
 }
