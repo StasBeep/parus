@@ -52,7 +52,7 @@
                 padding: 10px 25px;
                 box-sizing: border-box;
                 transition: background-color 0.8s ease,
-                        color 0.8s ease;
+                    color 0.8s ease;
 
                 &:hover {
                     background-color: $bg-active-btn;
@@ -90,7 +90,7 @@
                 &:hover {
                     background-color: $bg-active-btn;
 
-                    & > .header-menu-li-light-svg {
+                    &>.header-menu-li-light-svg {
                         fill: #f3f3f3;
                     }
                 }
@@ -98,7 +98,7 @@
                 &:active {
                     background-color: red;
 
-                    & > .header-menu-li-light-svg {
+                    &>.header-menu-li-light-svg {
                         fill: black;
                     }
                 }
@@ -119,12 +119,11 @@
 
             &:hover {
                 font-weight: 600;
-                
+
             }
         }
     }
 }
-
 
 .face {
     padding: 145px 0 218px;
