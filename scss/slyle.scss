@@ -52,7 +52,7 @@
                 padding: 10px 25px;
                 box-sizing: border-box;
                 transition: background-color 0.8s ease,
-                        color 0.8s ease;
+                    color 0.8s ease;
 
                 &:hover {
                     background-color: $bg-active-btn;
@@ -90,7 +90,7 @@
                 &:hover {
                     background-color: $bg-active-btn;
 
-                    & > .header-menu-li-light-svg {
+                    &>.header-menu-li-light-svg {
                         fill: #f3f3f3;
                     }
                 }
@@ -98,7 +98,7 @@
                 &:active {
                     background-color: red;
 
-                    & > .header-menu-li-light-svg {
+                    &>.header-menu-li-light-svg {
                         fill: black;
                     }
                 }
@@ -119,8 +119,57 @@
 
             &:hover {
                 font-weight: 600;
-                
+
             }
         }
     }
+}
+
+.face {
+    padding: 145px 0 218px;
+    background-image: url(../image/bgsection1.png);
+    background-repeat: no-repeat;
+    background-position: 450px 20px;
+
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: $main-color;
+        width: 315px;
+        display: block;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $main-color;
+        width: 373px;
+    }
+
+    &-btn {
+        background: $bg-active-btn;
+        border-radius: 4px;
+        padding: 15px 41px;
+        color: $color-white;
+        border: 1px solid $bg-active-btn;
+    }
+
+    &-svg {
+        fill: $bg-active-btn;
+        width: 20px;
+        height: 17px;
+    }
+
+    &-link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $bg-active-btn;
+        text-decoration: none;
+    }
+
 }
