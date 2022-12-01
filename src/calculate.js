@@ -1,23 +1,31 @@
 "use strict";
+// Подключение функций
+import {operationCalculate} from "./_functions.js";
 
-console.log("Привет");
+// Привязываем кнопки к переменным
+let add = document.querySelector('#add');
+let diff = document.querySelector('#diff');
+let composition = document.querySelector('#composition');
+let division = document.querySelector('#division');
 
-let elem = document.getElementById('sum');
+// Переменная-ссылка для вывода результата
+let resultElement = document.querySelector('#result');
+let result = 0;
 
-console.log(elem);
-
-elem.addEventListener('click', () => {
-    // Сохранение в переменные значения полей
-    // + перед document - это перевод значения поля в число (по умолчанию это строка)
-    // .value - это прочитать поле input и в этом input взять всё, что лежит в value, то есть число
-    let oprand1 = +document.querySelector('#op1').value;
-    let oprand2 = +document.querySelector('#op2').value;
-
-    // Суммируем значения
-    let result = oprand1 + oprand2;
-
-    // Получаем тег span с id result
-    // С помощью функции innerHTML вывод результат в этот тег (по умолчанию в теге span ничего не лежит)
-    document.querySelector('#result').innerHTML = `${result}`;
+// Навязываем слушателя на кнопки (клик)
+add.addEventListener('click', () => {
+   result = operationCalculate('+');
+   resultElement.innerHTML = `${result}`
 });
-
+diff.addEventListener('click', () => {
+    result = operationCalculate('-');
+    resultElement.innerHTML = `${result}`
+ });
+composition.addEventListener('click', () => {
+    result = operationCalculate('*');
+    resultElement.innerHTML = `${result}`
+ });
+division.addEventListener('click', () => {
+    result = operationCalculate('/');
+    resultElement.innerHTML = `${result}`
+ });
