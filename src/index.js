@@ -1,13 +1,14 @@
 "use strict";
-let result = document.querySelector("#first");
-let x = +prompt("Введите x:");
-let y = Number(prompt("Введите y:"));
 
-// Вывод суммы x+y
-console.log(x+y);
+let n = +prompt("Введите n-угольник");
+let R = +prompt("Введите R");
 
-let t = Math.cos(Math.PI / 7) * Math.pow(Math.sin(x-8*y), 2) / (2,7*(x-Math.PI));
+let result = storona(R, n);
 
-result.innerText = t;
+console.log(result);
 
-console.log(t);
+ function storona(R, n) {
+    let a = 2 * R * Math.sin(180/n);
+    let p = n * a;
+    return p;
+ }
