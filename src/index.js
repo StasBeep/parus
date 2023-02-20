@@ -1,16 +1,31 @@
 "use strict";
 
-let n = +prompt("Введите n-угольник");
-let R = +prompt("Введите R");
+// Входные переменные
+let c = +prompt("Введите c:");
+let y = +prompt("Введите y:");
+let x = +prompt("Введите x:");
+let z = +prompt("Введите z:");
 
-let result = storona(R, n);
+// Выходные переменные
+let result = Variant31(c, y, x, z);
 
+// Функция условий
+function Variant31(C, Y, X, Z) {
+   // Переменная для хранения результата
+   let p;
+   // Если с логическим "И"
+   if(Y*Z > 0 && X > 0){
+      let minEl2 = Math.min(C+Y, Math.sqrt(x));
+      p = Math.max(minEl2, Y, X + Z);
+      // Если с уловием и логическим "И"
+   } else if(Y*Z < 0 && X > 0) {
+      p = Math.min(Math.sin(X), Math.pow(Z, 3));
+      // В противном случае
+   } else {
+      p = 1;
+   }
+   // Возврат результата
+   return p;
+}
+// Вывод в консоль
 console.log(result);
-
-// Функция (метод) входные параметры: R, n
- function storona(R, n) {
-    let a = 2 * R * Math.sin(180/n);
-    let p = n * a;
-    // return - возврат значения p в result (строка 6)
-    return p;
- }

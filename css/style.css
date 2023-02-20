@@ -1,0 +1,6 @@
+.list {
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    background-image: url(../img//bgfirst.jpg);
+}
