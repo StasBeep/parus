@@ -1,15 +1,20 @@
 "use strict";
 
-let y;
-// i+= 0.3 => i = i + 0.3;
-for (let x = -3; x <= 3; x += 0.3) {
-   if (x >= -2 && x <= 2) {
-      y = Math.pow(x, 2);
-   } else if (x > 2) {
-      y = 0;
-   } else if (x < -2) {
-      y = 4 * Math.cos(x);
-   }
+let b = [7.35, 0.12, -7, 3.12, 2.87, -4.12, 5.32,0, 6.5, 12];
 
-   console.log(y);
+console.log(b);
+
+// Предположение
+let max = b[0];
+let n = 0;
+
+// Бегаем по массиву
+for(let i = 0; i < b.length; i++) {
+   if(max < b[i]) {
+      max = b[i];
+      n = i;
+   }
 }
+
+// Вывод массива
+console.log(n, max);
