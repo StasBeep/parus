@@ -35,7 +35,7 @@ body {}
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
-    ] color: #22343D;
+    color: #22343D;
 }
 
 
@@ -66,10 +66,15 @@ body {}
     background: #02897A;
     background: #F3F3F3;
     border-radius: 100px;
-    background: #FFFFFF;
-    transform: matrix(1, 0, 0, -1, 0, 0);
     border:none;
+    cursor: pointer;
+}
 
+.header-btnlight:hover > .header-btnlight-svg {
+    transition: fill ease-in-out 1s;
+    fill: rgb(255, 230, 0);
+}
 
-
+.header-btnlight-svg {
+    fill: #02897A;
 }
