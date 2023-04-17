@@ -1,0 +1,190 @@
+body {
+}
+
+.header {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 146px;
+}
+
+.header-img {
+    width: 40px;
+    height: 36px;
+    margin-right: 16px;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    color: #173a56;
+}
+
+.header-list {
+    display: flex;
+    margin-left: 230px;
+    list-style-type: none;
+
+    margin-right: 24px;
+}
+
+.header-list-li {
+    margin-right: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #22343d;
+}
+
+.header-btnIn {
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173a56;
+    border: 1px solid color #ffffff;
+    border-radius: 4px;
+}
+
+.header-btnUp {
+    margin-right: 25px;
+    background: #02897a;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 25px;
+    color: #ffffff;
+    border: none;
+}
+
+.header-btnlight {
+    margin-right: 30px;
+    background: #02897a;
+    background: #f3f3f3;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-btnlight:hover > .header-btnlight-svg {
+    transition: fill ease-in-out 1s;
+    fill: rgb(255, 230, 0);
+}
+
+.header-btnlight-svg {
+    fill: #02897a;
+}
+
+.main {
+    width: 1400px;
+    margin: 0 auto;
+    padding-right: 146px;
+    padding-left: 146px;
+}
+
+// Первый блок
+.appeal {
+    &-content {
+        background-image: url(../img/amico.jpg);
+        background-repeat: no-repeat;
+        background-position-x: 755px;
+        background-position-y: 25px;
+
+        &-title {
+            padding-top: 145px;
+            margin-bottom: 18px;
+            display: block;
+            width: 350px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            color: #22343d;
+
+            &:hover {
+                color: #02897a;
+            }
+        }
+
+        &-text {
+            width: 375px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #22343d;
+            margin-bottom: 45px;
+        }
+
+        &-links {
+            padding-bottom: 218px;
+
+            &-button {
+                padding: 15px 41px;
+                background: #02897a;
+                border-radius: 4px;
+                border: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffff;
+                margin-right: 30px;
+            }
+
+            &-svg {
+                fill: #02897a;
+                margin-right: 8px;
+            }
+
+            &-link {
+                color: #02897a;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.info {
+    background-image: url(../img/bg-info.jpg);
+
+    &-title {
+        display: block;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        margin: 0 auto 60px;
+        color: #22343d;
+        width: 455px;
+    }
+
+    &-cards {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        &-li {
+            width: 240px;
+
+            &-btn {
+                width: 50px;
+                height: 50px;
+                background: #f03e3d;
+                border-radius: 19px;
+                border: 1px solid #f03e3d;
+                margin-bottom: 30px;
+
+                &-svg {
+                    fill: #ffffff;
+                }
+            }
+
+            &-title {
+                display: block;
+
+            }
+        }
+    }
+}
